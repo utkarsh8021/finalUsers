@@ -1,0 +1,169 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3">
+        <i class="fas fa-user-plus"></i> Register
+      </h1>
+      <% include ./partials/messages %>
+      <form action="/users/register" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Business Unit</label>
+          <input
+            type="business"
+            id="business"
+            name="business"
+            class="form-control"
+            placeholder="Enter Business Unit"
+            value="<%= typeof name != 'undefined' ? business : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Title</label>
+          <input
+            type="title"
+            id="title"
+            name="title"
+            class="form-control"
+            placeholder="Enter Title"
+            value="<%= typeof name != 'undefined' ? title : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Telephone</label>
+          <input
+            type="telephone"
+            id="telephone"
+            name="telephone"
+            class="form-control"
+            placeholder="Enter Telephone Number"
+            value="<%= typeof name != 'undefined' ? telephone : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Address 1</label>
+          <input
+            type="address1"
+            id="address1"
+            name="address1"
+            class="form-control"
+            placeholder="Enter Address 1"
+            value="<%= typeof name != 'undefined' ? address1 : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Address 2</label>
+          <input
+            type="address2"
+            id="address2"
+            name="address2"
+            class="form-control"
+            placeholder="Enter Address 2"
+            value="<%= typeof name != 'undefined' ? address2 : '' %>"
+          />
+        </div>
+        
+        <div class="form-group">
+          <label for="name">City</label>
+          <input
+            type="city"
+            id="city"
+            name="city"
+            class="form-control"
+            placeholder="Enter City"
+            value="<%= typeof name != 'undefined' ? city : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">State</label>
+          <input
+            type="state"
+            id="state"
+            name="state"
+            class="form-control"
+            placeholder="Enter State"
+            value="<%= typeof name != 'undefined' ? state : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">ZIP</label>
+          <input
+            type="zip"
+            id="zip"
+            name="zip"
+            class="form-control"
+            placeholder="Enter ZIP Code"
+            value="<%= typeof name != 'undefined' ? zip : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Country</label>
+          <input
+            type="country"
+            id="country"
+            name="country"
+            class="form-control"
+            placeholder="Enter Country"
+            value="<%= typeof name != 'undefined' ? country : '' %>"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Register
+        </button>
+      </form>
+      <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+    </div>
+  </div>
+</div>
